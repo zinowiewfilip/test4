@@ -1,4 +1,4 @@
-package zadanie2;
+package exceptions;
 
 public class InvalidPeselException extends Exception {
     public InvalidPeselException(String message) {

@@ -1,4 +1,6 @@
-package zadanie1;
+package zadanie1.app;
+
+import zadanie1.services.MinMaxService;
 
 import java.util.ArrayList;
 import java.util.List;

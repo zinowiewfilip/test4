@@ -1,4 +1,4 @@
-package zadanie2;
+package zadanie2.services;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;

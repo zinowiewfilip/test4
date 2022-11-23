@@ -1,4 +1,7 @@
-package zadanie2;
+package zadanie2.app;
+
+import exceptions.InvalidPeselException;
+import zadanie2.services.PeselValidator;
 
 import java.util.Optional;
 

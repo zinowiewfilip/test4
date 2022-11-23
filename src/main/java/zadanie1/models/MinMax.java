@@ -1,4 +1,4 @@
-package zadanie1;
+package zadanie1.models;
 
 import java.util.List;
 

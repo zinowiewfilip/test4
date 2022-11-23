@@ -1,4 +1,6 @@
-package zadanie1;
+package zadanie1.services;
+
+import zadanie1.models.MinMax;
 
 import java.util.Collections;
 import java.util.List;
