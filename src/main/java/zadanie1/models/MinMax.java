@@ -1,7 +1,5 @@
 package zadanie1.models;
 
-import java.util.List;
-
 public class MinMax<T extends Comparable> {
     private T max;
     private T min;

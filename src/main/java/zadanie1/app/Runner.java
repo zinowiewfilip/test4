@@ -29,6 +29,5 @@ public class Runner {
         System.out.println(MinMaxService.getMinAndMax(strings).getMax());
 
 
-
     }
 }

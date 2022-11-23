@@ -3,12 +3,9 @@ package zadanie5.app;
 import exceptions.InvalidBirthDateException;
 
 import java.time.DayOfWeek;
-import java.time.Duration;
 import java.time.LocalDate;
-import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Runner {
@@ -18,12 +15,12 @@ public class Runner {
         String dateFormat = "dd-MM-yyyy";
 
 
-        System.out.println("Podaj date urodzenia w formacie: " +dateFormat);
+        System.out.println("Podaj date urodzenia w formacie: " + dateFormat);
         date = in.nextLine();
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern(dateFormat);
         LocalDate userDate = LocalDate.parse(date, dtf);
         //sprawdzenie i rzucenie wyjątku
-        if(userDate.isAfter(LocalDate.now()))
+        if (userDate.isAfter(LocalDate.now()))
             throw new InvalidBirthDateException();
 
         //ile dni żyje
@@ -40,6 +37,7 @@ public class Runner {
 
         in.close();
     }
+
     public static LocalDate getNextDay(LocalDate date, int dayOfMonth, DayOfWeek dayOfWeek) {
         LocalDate current = date.getDayOfMonth() > dayOfMonth ?
                 date.plusMonths(1).withDayOfMonth(dayOfMonth) :

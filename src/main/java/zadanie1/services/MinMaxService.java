@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class MinMaxService {
-    public static <T extends Comparable> MinMax<T> getMinAndMax(List<T> elements){
+    public static <T extends Comparable> MinMax<T> getMinAndMax(List<T> elements) {
 
         Collections.sort(elements);
 

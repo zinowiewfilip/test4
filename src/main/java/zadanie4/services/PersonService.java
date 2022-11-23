@@ -2,7 +2,10 @@ package zadanie4.services;
 
 import zadanie4.models.Person;
 
-import java.util.*;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class PersonService {
@@ -22,6 +25,7 @@ public class PersonService {
                 .getAsDouble();
         return (int) avgAge;
     }
+
     public int getAvgMaleAge(List<Person> people) {
         double avgAge = people.stream()
                 .filter(x -> !x.getName().endsWith("a"))
@@ -30,6 +34,7 @@ public class PersonService {
                 .getAsDouble();
         return (int) avgAge;
     }
+
     public int getAvgFemaleAge(List<Person> people) {
         double avgAge = people.stream()
                 .filter(x -> x.getName().endsWith("a"))
@@ -38,6 +43,7 @@ public class PersonService {
                 .getAsDouble();
         return (int) avgAge;
     }
+
     public String getAvgAgeDependsOnSex(List<Person> people) {
         List<Person> females = people.stream()
                 .filter(x -> x.getName().endsWith("a"))
@@ -53,7 +59,7 @@ public class PersonService {
                 .mapToDouble(Person::getAge)
                 .average()
                 .getAsDouble();
-        return "Male: " +maleAvgAge+ " Female: " +femaleAvgAge;
+        return "Male: " + maleAvgAge + " Female: " + femaleAvgAge;
     }
 
     public String getCityWithTheMostPeople(List<Person> people) {

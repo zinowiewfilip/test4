@@ -13,13 +13,13 @@ public class IntegerListService {
         Optional<List<Integer>> elementsOptional = Optional.ofNullable(elements);
         List<Integer> newList = elementsOptional
                 .orElse(empty).stream()
-                    .filter(x -> !x.equals(null))
-                    .distinct()
-                    .sorted((x1, x2) -> Integer.compare(x2, x1))
-                    .limit(5)
-                    .collect(Collectors.toList());
+                .filter(x -> !x.equals(null))
+                .distinct()
+                .sorted((x1, x2) -> Integer.compare(x2, x1))
+                .limit(5)
+                .collect(Collectors.toList());
 
-        if(newList.size() < 5)
+        if (newList.size() < 5)
             return empty;
         else
             return newList;

@@ -6,6 +6,7 @@ import java.time.LocalDate;
 public class PeselValidator {
 
     private String number;
+
     public String getNumber() {
         return number;
     }
