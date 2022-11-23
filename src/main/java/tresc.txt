@@ -6,6 +6,7 @@ mina i maxa z listy w tym jednym obiekcie wg naturalnego porządku jaki gwarantu
 klasa MinMax powinna byc generyczna i metody getMin oraz getMax powinny zwraca instancje tego co
 bedzie na liscie elements, czyli jak przekazemy liste stringow to getMax ma zwraca String,
 getMin tez stringa a jak damy liste osob to ma getMax zwraca osobe, itp itd.
+
 Zadanie 2 Wykorzystując optional:
 - zapytaj użytkownika o jego imie, jeśli imie będzie podane to wypisz długość imienia, jeśli nie to wypisz 0.
 - zapytaj użytkownika o pesel, jeśli będzie podany poprawny pesel (11 zankow powiedzmy wiekszej walidacji nie ma co robic, no i nie null i nie pusty) to bierzemy date urodzenia z tego numeru, w przeciwnym przypadku rzucamy wyjatkiem InvlaidPeselException

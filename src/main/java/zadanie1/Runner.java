@@ -14,11 +14,18 @@ public class Runner {
         integers.add(10);
         integers.add(4);
         strings.add("Kamil");
-        strings.add("asdasd");
-        strings.add("aksdl");
+        strings.add("asdasdd");
+        strings.add("aksdla");
 
+        //Zwracanie max'a z integers
         System.out.println(MinMaxService.getMinAndMax(integers).getMax());
+        //Zwracanie min'a z integers
         System.out.println(MinMaxService.getMinAndMax(integers).getMin());
+        //Zwracanie min'a z strings
+        System.out.println(MinMaxService.getMinAndMax(strings).getMin());
+        //Zwracanie max'a z strings
+        System.out.println(MinMaxService.getMinAndMax(strings).getMax());
+
 
 
     }
